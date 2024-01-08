@@ -22,7 +22,8 @@ git clone https://github.com/muhammad-haziqul-khair/PySecureLogger.git
 
 2. __Configuration__:
  * Update sender's and receiver's email addresses in the script.<br>
- * Set the sender's app password. [Click Here to Create App password!](https://www.youtube.com/watch?v=T0Op3Qzz6Ms)<br>
+ * Set the sender's app password.[Click Here to Create App password!](https://www.youtube.com/watch?v=T0Op3Qzz6Ms){:target="_blank"}<br>
+
  * Run the file logger.py
 
 ## Configuration
