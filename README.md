@@ -4,7 +4,7 @@
 This Python Keylogger with Email Notification is a simple tool designed to log keys pressed on a computer and send the recorded data via email at regular intervals. It can be used for educational purposes or as a monitoring tool with proper consent and authorization.
 
 ## Features
-* __Key Logging__: Captures and logs keys pressed on the keyboard.<br>
+* __Key Logging__: Captures logs keys pressed on the keyboard.<br>
 
 * __Email Notification__: Sends the recorded key logs via email to a specified recipient.<br>
 
@@ -17,10 +17,9 @@ Before you begin, ensure you have the following installed:<br>
 * smptblib: __pip install secure-smtplib__
 
 ## Usage
-1. __Clone the Repository__:
-'''bash
+1. __Clone the Repository__:<br>
 git clone https://github.com/muhammad-haziqul-khair/PySecureLogger.git
-'''
+
 2. __Configuration__:
  * Update sender's and receiver's email addresses in the script.<br>
  * Set the sender's app password. [Click Here to Create App password!](https://www.youtube.com/watch?v=T0Op3Qzz6Ms)<br>
